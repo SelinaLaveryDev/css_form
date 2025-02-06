@@ -1,6 +1,7 @@
+/* border-box is the best box-sizing value for a responsive layout because it includes padding and border in the element's total width and height */
+}
 * {
-    box-sizing: border-box;
-  }
+    box-sizing: border-box; 
   
   body {
     margin: 0;
@@ -37,7 +38,8 @@
     border-radius: 10px;
   }
   
-  .gallery::after {
+  /* creates another element after the gallery element to move the last image into the correct position when the number of images is odd. */
+  .gallery::after { 
     content: "";
     width: 350px;
   }
