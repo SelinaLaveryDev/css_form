@@ -27,6 +27,7 @@ body {
     border-bottom: 3px solid #3b3b4f;
   }
   
+   /* this targets the very last 'fieldset' element */
   fieldset:last-of-type {
     border-bottom: none;
   }
@@ -53,9 +54,10 @@ body {
   .inline {
     width: unset;
     margin: 0 0.5em 0 0;
-    vertical-align: middle;
+    vertical-align: middle;  /* this moves the radio button very slightly to the middle */
   }
   
+   /* this targets the input element with the type 'submit' */
   input[type="submit"] {
     display: block;
     width: 60%;
@@ -67,6 +69,7 @@ body {
     min-width: 300px;
   }
   
+  /* this targets the input element with the type 'file' */
   input[type="file"] {
     padding: 1px 2px;
   }
