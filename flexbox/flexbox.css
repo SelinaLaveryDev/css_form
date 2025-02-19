@@ -1,7 +1,8 @@
 /* border-box is the best box-sizing value for a responsive layout because it includes padding and border in the element's total width and height */
-}
+
 * {
     box-sizing: border-box; 
+  }
   
   body {
     margin: 0;

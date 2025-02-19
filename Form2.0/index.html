@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Responsive Design Survey</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1 id="title">Responsive Web Design Survey</h1>
+      <p id="description"><b>Share your thoughts on CSS and responsive web design!</b></p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" class="text" required></label>
+        <label id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" class="text" required></label>
+        <label id="number-label">Age <em>(optional)</em>: <input id="number" name="age" type="number" min="13" max="123" placeholder="Enter your age" class="text"></label>
+      </fieldset>
+      <fieldset class="input-text">
+        <label for="dropdown">What aspect of CSS intrigues you the most? <select id="dropdown" required></label>
+          <option value="">Select one</option>
+          <option value="1">Flexbox</option>
+          <option value="2">Grid Layout</option>
+          <option value="3">Animations and Transitions</option>
+          <option value="4">Custom Properties (CSS Variables)</option>
+          <option value="5">Responsive Design Techniques</option>
+          <option value="6">Cross-Browser Compatibility</option>
+          <option value="7">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <p>Why are you interested in learning responsive web design? <em>(Check all that apply)</em></p>
+        <div>
+          <label><input type="checkbox" class="button" value="1"> To create visually appealing websites.</label>
+          <label><input type="checkbox" class="button" value="2"> To improve user experience on different devices.</label>
+          <label><input type="checkbox" class="button" value="3"> To stay updated with modern web design trends.</label>
+          <label><input type="checkbox" class="button" value="4"> To enhance my portfolio.</label>
+          <label><input type="checkbox" class="button" value="5"> To solve layout challenges.</label>
+          <label><input type="checkbox" class="button" value="6"> To learn how to use media queries effectively.</label>
+          <label><input type="checkbox" class="button" value="7"> To make websites accessible to all users.</label>
+          <label><input type="checkbox" class="button" value="8"> To optimize website performance.</label>
+          <label><input type="checkbox" class="button" value="9"> To collaborate better with developers.</label>
+          <label><input type="checkbox" class="button" value="10"> Other(s)</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <p>What challenges do you face when working with CSS? <em>(Optional)</em></p>
+        <textarea id="challenges" placeholder="I struggle with..." rows="3" cols="40"></textarea>
+      </fieldset>
+      <fieldset>
+        <p>How confident are you in creating responsive designs?</p>
+        <div class="inline">
+          <label><input type="radio" value="1" name="confidence" class="button"> Very Confident</label>
+          <label><input type="radio" value="2" name="confidence" class="button"> Somewhat Confident</label>
+          <label><input type="radio" value="3" name="confidence" class="button"> Neutral</label>
+          <label><input type="radio" value="4" name="confidence" class="button"> Not Confident</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <p><b>Press <em>"SUBMIT"</em> when you're done!</b></p>
+        <input id="submit" type="submit" value="SUBMIT">
+      </fieldset>
+    </form>
+  </body>
+</html>
